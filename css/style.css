@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 /* parte superiore del nav */
@@ -147,6 +146,7 @@ main{
 
 .section-two{
     height: 400px;
+
 }
 
 .section-three{
@@ -159,6 +159,11 @@ main{
 
 .section-two, .section-four, .section-five{
     background-color: rgb(230, 230, 230);
+}
+
+#waves{
+    opacity: 0.1;
+    margin-bottom: 0;
 }
 
 .section-inner{
@@ -261,6 +266,7 @@ h2{
 }
 
 .section-five-download button.button-small{
+    color: white;
     background-color: rgb(114, 137, 218);
     border: none;
     border-radius: 20px;;
@@ -319,6 +325,7 @@ footer{
 }
 
 .footer-bottom-inner .register .button-small{
+    color: white;
     background-color: rgb(114, 137, 218);
     border: none;
     border-radius: 20px;
@@ -330,7 +337,28 @@ footer{
     font-size: 18px;
 }
 
+.footer-top-inner .list-title ul{
+    margin-top: 10px;
+}
+
 .footer-top-inner .list-title ul li{
     list-style-type: none;
     padding: 10px 0;
+}
+
+.footer-top-inner #social img{
+    width: 30px;
+    vertical-align: middle;
+}
+
+.footer-top-inner select{
+    color: white;
+    vertical-align: middle;
+    background-color: rgb(35, 39, 42);
+    margin-left: 10px;
+}
+
+.footer-top-inner #social h3{
+    color: rgb(114, 137, 218);
+    margin-bottom: 15px;
 }
