@@ -138,7 +138,6 @@ nav{
 main{
     display: flex;
     flex-direction: column;
-    gap: 60px;
 }
 
 .section-one{
@@ -269,9 +268,10 @@ h2{
 }
 
 footer{
-    height: 500px;
     display: flex;
     flex-direction: column;
+    height: 500px;
+    color: white;
     background-color: rgb(35, 39, 42);
 }
 
@@ -323,4 +323,12 @@ footer{
     border: none;
     border-radius: 20px;
     padding: 6px 12px;
+}
+
+.footer-top-inner .list-title strong{
+    color: rgb(114, 137, 218);
+}
+
+.footer-top-inner .list-title ul li{
+    list-style-type: none;
 }
