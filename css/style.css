@@ -140,12 +140,25 @@ main{
     flex-direction: column;
 }
 
+.section-one{
+    height: 400px;
+    margin-top: 60px;
+}
+
+.section-two{
+    height: 400px;
+}
+
+.section-three{
+    height: 400px;
+}
+
 .section-one, .section-three{
     background-color: white;
 }
 
 .section-two, .section-four, .section-five{
-    background-color: lightgrey;
+    background-color: rgb(230, 230, 230);
 }
 
 .section-inner{
@@ -162,38 +175,29 @@ main{
 }
 
 .section-inner .section-img img{
+    text-align: center;
     width: 100%;
 }
 
 .section-inner .section-text{
-    width: 400px;
+    padding: 40px;
+    width: 300px;
     height: 100%;
 }
 
-.section-four-img img{
-    height: 100%;
-    width: 100%;
+h2{
+    font-size: 30px;
+    margin-bottom: 35px;
 }
 
-.section-one{
-    height: 400px;
-    margin-top: 60px;
-}
-
-.section-two{
-    height: 400px;
-}
-
-.section-three{
-    height: 400px;
+.section-text p{
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 600;
 }
 
 .section-four{
     height: 500px;
-}
-
-.section-five{
-    height: 200px;
 }
 
 .section-four-inner{
@@ -202,43 +206,72 @@ main{
     align-items: center;
 }
 
-.section-four-text{
-    width: 1000px;
-    height: 160px;
-    background-color: coral;
-}
-
-.section-four-img{
-    width: 1000px;
-    height: 340px;
-    background-color: darkolivegreen;
-}
-
-.section-five-inner{
-    /* background-image: url(../img/stars.svg);
-    background-repeat: no-repeat;
-    background-position: center; */
+.section-four-inner .section-four-text{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 1000px;
+    height: 160px;
+}
+
+.section-four-inner .section-four-text p{
+    text-align: center;
+    width: 800px;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+.section-four-inner .section-four-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.section-four-inner .section-four-img{
+    height: 340px;
+}
+
+.section-five{
+    height: 200px;
+}
+
+.section-five-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .section-five-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 500px;
-    height: 130px;
-    background-color: coral;
+    height: 100px;
 }
 
 .section-five-download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 70px;
     width: 250px;
-    background-color: rgb(80, 80, 167);
+}
+
+.section-five-download button.button-small{
+    background-color: rgb(114, 137, 218);
+    border: none;
+    border-radius: 20px;;
+    padding: 6px 12px;
 }
 
 footer{
     height: 500px;
     display: flex;
     flex-direction: column;
+    background-color: rgb(35, 39, 42);
 }
 
 .footer-top{
@@ -257,12 +290,10 @@ footer{
 
 .footer-top-inner div{
     width: 150px;
-    background-color: black;
 }
 
-#social{
+.footer-top-inner #social{
     width: 250px;
-    background-color: antiquewhite;
 }
 
 .footer-bottom{
@@ -273,7 +304,22 @@ footer{
 
 .footer-bottom-inner{
     display: flex;
-    width: 1000px;
     justify-content: space-between;
     align-items: center;
+    width: 1000px;
+}
+
+.footer-bottom-inner .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 70px;
+}
+
+.footer-bottom-inner .register .button-small{
+    background-color: rgb(114, 137, 218);
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
 }
