@@ -327,8 +327,10 @@ footer{
 
 .footer-top-inner .list-title strong{
     color: rgb(114, 137, 218);
+    font-size: 18px;
 }
 
 .footer-top-inner .list-title ul li{
     list-style-type: none;
+    padding: 10px 0;
 }
