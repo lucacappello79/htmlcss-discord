@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.nav-top{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(37, 94, 233);
+}
+
+.nav-top-inner{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+li{
+    width: 70px;
+    height: 30px;
+    background-color: darkorange;
+    text-align: center;
+    padding: 5px
+}
+
+.nav-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-image: url(../img/jumbo.png);
+    background-size: contain;
+}
+
+.nav-bottom-inner{
+    border: none;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: aqua;
+}
+
+.title{
+    width: 500px;
+    height: 180px;
+    background-color: blue;
+}
+
+.download{
+    height: 70px;
+    width: 250px;
+    background-color: rgb(80, 80, 167);
+}
+
+.browser{
+    height: 70px;
+    width: 250px;
+    background-color: rgb(80, 80, 167);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 70px;
+}
+
+#links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 70px;
+}
+
+button.button-small{
+    background-color: white;
+    border: none;
+    border-radius: 10px;;
+    padding: 7px 10px;
+}
+
+.login, .register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 70px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.section-img{
+    width: 600px;
+    height: 100%;
+    background-color: darkgreen;
+}
+
+.section-text{
+    width: 400px;
+    height: 100%;
+    background-color: lawngreen;
+}
+
+.section-one{
+    height: 400px;
+}
+
+.section-two{
+    height: 400px;
+}
+
+.section-three{
+    height: 400px;
+}
+
+.section-four{
+    height: 500px;
+}
+
+.section-five{
+    height: 200px;
+}
+
+.section-four-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-four-text{
+    width: 1000px;
+    height: 160px;
+    background-color: coral;
+}
+
+.section-four-img{
+    width: 1000px;
+    height: 340px;
+    background-color: darkolivegreen;
+}
+
+.section-five-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-five-text{
+    width: 500px;
+    height: 130px;
+    background-color: coral;
+}
+
+.section-five-download{
+    height: 70px;
+    width: 250px;
+    background-color: rgb(80, 80, 167);
+}
+
+footer{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.footer-top-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 35px;
+    width: 1000px;
+}
+
+.footer-top-inner div{
+    width: 150px;
+    background-color: black;
+}
+
+#social{
+    width: 250px;
+    background-color: antiquewhite;
+}
+
+.footer-bottom{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+}
+
+.footer-bottom-inner{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+}
