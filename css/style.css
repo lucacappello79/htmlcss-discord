@@ -5,6 +5,11 @@
     border: 1px solid red;
 }
 
+/* parte superiore del nav */
+nav{
+    color: white;
+}
+
 .nav-top{
     display: flex;
     align-items: center;
@@ -20,86 +25,118 @@
     width: 100%;
 }
 
-ul{
-    list-style-type: none;
+.nav-top-inner .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 70px;
+}
+
+.nav-top-inner #links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+    height: 70px;
+}
+
+.nav-top-inner ul{
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    /* list-style-type: none; */
 }
 
-li{
-    width: 70px;
+.nav-top-inner li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 70px;
     height: 30px;
-    background-color: darkorange;
-    text-align: center;
-    padding: 5px
 }
 
+.nav-top-inner button.button-small{
+    background-color: white;
+    border: none;
+    border-radius: 20px;;
+    padding: 6px 12px;
+}
+
+.nav-top-inner .login, .register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 70px;
+}
+/* fine parte superiore del nav */
+
+/* parte inferiore del nav */
 .nav-bottom{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 400px;
     background-image: url(../img/jumbo.png);
-    background-size: contain;
+    background-size: cover;
 }
 
 .nav-bottom-inner{
-    border: none;
-    width: 500px;
-    height: 250px;
     display: flex;
     flex-flow: row wrap;
-    background-color: aqua;
+    width: 500px;
+    height: 250px;
+    border: none;
 }
 
-.title{
+.nav-bottom-inner .title{
+    text-align: center;
     width: 500px;
     height: 180px;
-    background-color: blue;
 }
 
-.download{
+h1{
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+p{
+    text-align:c
+}
+
+.nav-bottom-inner .download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 70px;
     width: 250px;
-    background-color: rgb(80, 80, 167);
 }
 
-.browser{
-    height: 70px;
-    width: 250px;
-    background-color: rgb(80, 80, 167);
-}
-
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 70px;
-}
-
-#links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 70px;
-}
-
-button.button-small{
+.download .button-large{
     background-color: white;
     border: none;
-    border-radius: 10px;;
-    padding: 7px 10px;
+    border-radius: 20px;;
+    padding: 10px 20px;
 }
 
-.login, .register{
+.browser .button-large{
+    /* perché non eredita il color white da nav?? */
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 20px;;
+    padding: 10px 20px;
+}
+
+
+
+.nav-bottom-inner .browser{
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 150px;
+    justify-content: center;
     height: 70px;
+    width: 250px;
 }
 
 main{
