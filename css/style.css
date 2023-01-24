@@ -96,13 +96,9 @@ nav{
     height: 180px;
 }
 
-h1{
+.nav-bottom-inner .title h1{
     margin: 30px 0;
     font-size: 30px;
-}
-
-p{
-    text-align:c
 }
 
 .nav-bottom-inner .download{
@@ -113,24 +109,6 @@ p{
     width: 250px;
 }
 
-.download .button-large{
-    background-color: white;
-    border: none;
-    border-radius: 20px;;
-    padding: 10px 20px;
-}
-
-.browser .button-large{
-    /* perché non eredita il color white da nav?? */
-    color: white;
-    background-color: black;
-    border: none;
-    border-radius: 20px;;
-    padding: 10px 20px;
-}
-
-
-
 .nav-bottom-inner .browser{
     display: flex;
     align-items: center;
@@ -139,9 +117,35 @@ p{
     width: 250px;
 }
 
+.nav-bottom-inner .download .button-large{
+    background-color: white;
+    border: none;
+    border-radius: 20px;;
+    padding: 10px 20px;
+}
+
+.nav-bottom-inner .browser .button-large{
+    /* perché non eredita il color white da nav?? */
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 20px;;
+    padding: 10px 20px;
+}
+/* fine parte inferiore del nav */
+
+/* inizio di main */
 main{
     display: flex;
     flex-direction: column;
+}
+
+.section-one, .section-three{
+    background-color: white;
+}
+
+.section-two, .section-four, .section-five{
+    background-color: lightgrey;
 }
 
 .section-inner{
@@ -152,20 +156,28 @@ main{
     width: 100%;
 }
 
-.section-img{
+.section-inner .section-img{
     width: 600px;
     height: 100%;
-    background-color: darkgreen;
 }
 
-.section-text{
+.section-inner .section-img img{
+    width: 100%;
+}
+
+.section-inner .section-text{
     width: 400px;
     height: 100%;
-    background-color: lawngreen;
+}
+
+.section-four-img img{
+    height: 100%;
+    width: 100%;
 }
 
 .section-one{
     height: 400px;
+    margin-top: 60px;
 }
 
 .section-two{
@@ -203,6 +215,9 @@ main{
 }
 
 .section-five-inner{
+    /* background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
